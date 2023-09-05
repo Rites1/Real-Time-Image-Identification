@@ -1,0 +1,105 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Signika+Negative&display=swap" rel="stylesheet">
+</head>
+<body>
+  <p class="head">CASE STUDY BETWEEN GOOGLE LENS AND MOBILNET</p>
+  <br>
+  <br>
+  <br>
+  <center><label style="font-size: 20px;    font-family: 'Comic Neue', cursive; letter-spacing: 1px;">GOOGLE LENS</label></center>
+  <center><image src="Google_Lens_Icon.svg.png" width="200" height="200" id="google"></image></center>
+  <center><p class="head">VS</p></center>
+  <center><label class="btn btn-primary">MOBILNET</label></center>
+  <hr style="width: 1300px;">
+  <br>
+  <center>
+    <div class="bottle">
+      <p class="text"><b>1. Test Image - </b></p>
+      <image src="IMG-20230728-WA0010.jpg" width="300px" height="450px" class="image_item" align="left"></image>
+      <label class="output">Output on <label style="color: purple;">GOOGLE LENS</label> - <label style="color: red;">Water Bottle</label></label>
+      <label class="output">Output on <label style="color: purple;">Mobilnet Model</label> - <label style="color: red;">Water Bottle</label></label>
+      <br>
+      <label class="result">Result - </label>
+      <hr>
+      <label class="result">Draw</label>
+    </div>
+  </center>
+  <br>
+  <br>
+  <center>
+    <div class="shoes">
+      <p class="text">2. Test Image - </p>
+      <img src="shoes.webp" width="300px" height="450px" class="image_item" align="left">
+      <label class="output">Output on <label style="color: purple;">GOOGLE LENS</label> - <label style="color: red;">Canvas Shoes</label></label>
+      <label class="output">Output on <label style="color: purple;">Mobilnet Model</label> - <label style="color: red;">Running shoes</label></label>
+      <br>
+      <label class="result">Result - </label>
+      <hr>
+      <label class="result">GOOGLE LENS Is More Accurate</label>
+    </div>
+    <br>
+
+    <div class="Headphones" style="height: 300px;">
+      <p class="text">3. Test Image - </p>
+      <img src="headphones.avif" width="300px" height="250px" class="image_item" align="left">
+      <label class="output">Output on <label style="color: purple;">GOOGLE LENS</label> - <label style="color: red;">Headphones</label></label>
+      <label class="output">Output on <label style="color: purple;">Mobilnet Model</label> - <label style="color: red;">Microphone, Mike</label></label>
+      <br>
+      <label class="result">Result - </label>
+      <hr>
+      <label class="result">GOOGLE LENS Is More Accurate</label>
+    </div>
+    <br>
+
+    <div class="Headphones" style="height: 300px;">
+      <p class="text">4. Test Image - </p>
+      <img src="soft_toy.jpeg" width="300px" height="250px" class="image_item" align="left">
+      <label class="output">Output on <label style="color: purple;">GOOGLE LENS</label> - <label style="color: red;">Soft Toy</label></label>
+      <label class="output">Output on <label style="color: purple;">Mobilnet Model</label> - <label style="color: red;">Ski Mask</label></label>
+      <br>
+      <label class="result">Result - </label>
+      <hr>
+      <label class="result">GOOGLE LENS Is More Accurate</label>
+    </div>
+    <br>
+    
+    <div class="Bed">
+      <p class="text"><b>5. Test Image - </b></p>
+      <image src="Bed.jpeg" width="300px" height="450px" class="image_item" align="left"></image>
+      <label class="output">Output on <label style="color: purple;">GOOGLE LENS</label> - <label style="color: red;">Bed, Pillow, Blanket</label></label>
+      <label class="output">Output on <label style="color: purple;">Mobilnet Model</label> - <label style="color: red;">bathtub, bathing tub, bath, tub</label></label>
+      <br>
+      <label class="result">Result - </label>
+      <hr>
+      <label class="result">GOOGLE LENS Is More Accurate</label>
+    </div>
+
+
+    <br>
+    <div class="btn note">
+      <p>I have tested 5 images</p>
+      <p><b>GOOGLE LENS</b>have predicted 4 of them more accurately. A <b>MOBILNET</b> has less accurately</p>
+      <p>So according to my case study <b>GOOGLE LENS</b> is more Accurate</p>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <p id="footer" style="color: white;">Developed by - Ritesh Kumar</p>
+  </center>
+</body>
